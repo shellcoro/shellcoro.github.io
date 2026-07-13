@@ -1,0 +1,263 @@
+@charset "utf-8";
+body{
+	background-image: url("../image/bg.png");
+    background-repeat: repeat; 
+    background-size: 450px auto;
+	color:#333333;
+	font-family: "メイリオ","Hiragino Sans",sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-size: 180%;
+    font-weight: bold;
+    color: #2e1902;
+    border-left: 10px solid #4a2e05;
+    background-color: #f0efed;
+    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: medium;
+    border-bottom: 2px dashed#2e1902;
+}
+footer {
+    text-align: center;
+    background-color: #f5ead9;
+    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 15px;
+}
+
+h3 {
+    text-align: center;
+    background-color: #2e1902;
+    color: #f0efed;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 5px;
+}
+
+.brown{
+    color:#2e1902;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 90%;
+	line-height: 1.8;
+}
+
+header {
+	background-color: #ffffff;
+}
+
+nav ul{
+    font-weight: bold;
+    text-align: right;
+    padding-top: 26px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+nav li{
+    display:inline;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-right: 1px solid #2e1902;
+}
+
+article{
+    position: relative;
+    clear: both;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img{
+    float:left;
+}
+
+.header-in{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-h1 {
+	background-color: #2e1902;
+    color: #f0efed;
+	padding-top: 15px;
+	padding-left: 10px;
+	border-left: 15px solid #efe4cd;
+}
+
+.koshin-list{
+    list-style-image: url(../image/hone.png);
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.koshin-img{
+    box-shadow: 0px 0px 10px 3px #aaaaaa;
+	border-radius: 10px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.sentou{
+    clear: both;
+    text-align: right;
+}
+
+ol li{
+    display: inline;
+    margin-right: 5px;
+    font-size: 80%;
+}
+
+ol{
+    padding-left: 0;
+}
+
+.page{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+nav ul a{
+	text-decoration: none;
+    color: #2e1902;
+}
+
+nav ul a:hover{
+	color: #ed86c4;
+}
+
+nav ul a:active{
+	color: #7ab8e7;
+}
+
+table{
+    float: left;         
+    width: 60%;          
+    border: 1px solid #2e1902;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th{
+	background-color: #4a2e05;
+	border: 1px solid #2e1902;
+    color: #f0efed;
+	padding: 10px;
+	width: 20%;
+}
+
+td{
+	background-color: #f0efed;
+    border: 1px solid #2e1902;
+    color: #4a2e05;
+	padding: 10px;
+}
+
+.profile-container {
+    display: flex;     
+    gap: 20px;           
+    margin-bottom: 40px; 
+}
+
+.profile-image {
+    float: right;
+    width: 35%;
+    height: 35%;
+    margin-top: 50px;
+    margin-left: 20px;
+    object-fit: cover; 
+    clip-path: polygon(50% 15%, 65% 0%, 85% 0%, 100% 18%, 100% 40%, 80% 65%, 50% 95%, 20% 65%, 0% 40%, 0% 18%, 15% 0%, 35% 0%);
+}
+
+.clear-fix {
+    clear: both;         
+}
+
+.gallery-container {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.gallery-img {
+    float: left;        
+    margin-right: 5px;  
+    object-fit: cover;  
+    border-radius: 10px; 
+}
+
+/*959px以下の場合*/
+
+@media(max-width:960px){
+    header img{
+        float:none;
+    }
+    nav ul{
+        text-align: left;
+        padding: 0;
+        margin-left: 10px;
+    }
+    article{
+    width: auto;
+}
+
+    article img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header-in{
+        width: auto;
+    }
+}
+
+/*600px以下の場合*/
+@media (max-width: 600px){
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	footer{
+		font-size: 75%;
+	}
+	.catch{
+		top:5px;
+		left:10px;
+	}
+	.point-img{
+		float: none;
+	}
+}
+
+/*プリント出力*/
+@media print{
+	.catch{
+		color: #000000;
+		text-shadow: none;
+	}
+	footer{
+		color: #000000;
+	}
+}
